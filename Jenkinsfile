@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'pwd && ls -al'
+                sh 'ls -al'
+                sh './scripts/test.sh'
             }
         }
     }
