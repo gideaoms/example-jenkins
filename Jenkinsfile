@@ -20,5 +20,10 @@ pipeline {
                 sh './scripts/test.sh'
             }
         }
+        stage('Deliver') {
+            steps {
+                sh './scripts/deliver.sh'
+            }
+        }
     }
 }
